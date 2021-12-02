@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from moltran.coderthemes.com/menu_2/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Mar 2018 17:49:39 GMT -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+  <meta name="author" content="Coderthemes">
+
+  <link rel="shortcut icon" href="../assets/images/favicon_1.png">
+
+  <title>Portal del Investigador</title>
+
+  <!--calendar css-->
+  <link href="../assets/plugins/fullcalendar/dist/fullcalendar.css" rel="stylesheet">
+  <link href="../assets/plugins/select2/dist/css/select2.css" rel="stylesheet" type="text/css">
+
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/icons.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/pages.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/menu.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+  <script src="../assets/js/modernizr.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+  <!-- Navigation Bar-->
+  <header id="topnav">
+    <div class="topbar-main  navbar m-b-0 b-0">
+      <div class="container">
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+          <a href="../inicio/index.html" class="logo"><img src="../assets/images/logo.png"
+              style="width:60px; margin-top:-11px;padding-right:10px"></a>
+
+
+          <a href="../inicio/index.html" class="logo" style="margin-top:3px;"><span>Portal del <br>Investigador </span></a>
+        </div>
+        <!-- End Logo container-->
+
+
+        <div class="menu-extras">
+
+
+          <ul class="nav navbar-nav navbar-right pull-right">
+            <li>
+              <form role="search" class="navbar-left app-search pull-left hidden-xs">
+                <input type="text" placeholder="Buscar..." class="form-control">
+                <a href="#"><i class="fa fa-search"></i></a>
+              </form>
+            </li>
+            <li class="dropdown user-box">
+              <a href="#" class="dropdown-toggle waves-effect waves-light profile " data-toggle="dropdown"
+                aria-expanded="true">
+                Sebastián Meli <img src="../assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                <div class="user-status away"><i class="zmdi zmdi-dot-circle"></i></div>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile</a></li>
+                <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+                <li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+              </ul>
+
+            </li>
+            <li style="padding-left:5px">
+              <img src="../assets/images/anidlogo.png" style="width:70px">
+            </li>
+          </ul>
+
+          <div class="menu-item">
+            <!-- Mobile menu toggle-->
+            <a class="navbar-toggle">
+              <div class="lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <!-- End mobile menu toggle-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="navbar-custom">
+      <div class="container">
+        <div id="navigation">
+          <!-- Navigation Menu-->
+          <ul class="navigation-menu" style="padding-left:10%">
+            <li>
+              <a href="../inicio/index.html"><i class="md md-home fa-3x"></i> <span> Home </span> </a>
+            </li>
+            <li>
+              <a href="../perfil/miPerfil.html"><i class="md  md-account-circle"></i> <span> Mi Perfil </span> </a>
+            </li>
+            <li>
+              <a href="../gest_informacion/gestInformacion.html"><i class="fa fa-pie-chart fa-2x"></i> <span> Gestión de Información </span>
+              </a>
+            </li>
+            <li>
+              <a href="../vinculacion/vinculacion.html"><i class="fa fa-file-text-o fa-2x"></i> <span> Vinculación </span> </a>
+            </li>
+            <li class="active">
+              <a href="calendar.html"><i class="fa fa-calendar"></i> <span> Servicios Comunicacionales </span> </a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-gear"></i> <span> Administrador</span> </a>
+            </li>
+
+          </ul>
+          <!-- End navigation menu  -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Navigation Bar-->
+
+
+  <div class="wrapper">
+    <div class="container">
+      <br />
+      <!-- Page-Title -->
+      <div class="row">
+        <div class="col-sm-12">
+
+          <h4 class="page-title">Calendario </h4>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="row">
+
+            <div class="col-md-9">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div id="calendar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end col -->
+
+            <div class="col-md-3">
+              <div class="widget">
+                <div class="widget-body">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <a href="#" data-toggle="modal" data-target="#add-category"
+                        class="btn btn-lg btn-primary btn-block waves-effect waves-light">
+                        <i class="fa fa-plus"></i> Nuevo Evento
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end col-->
+          </div> <!-- end row -->
+
+          <!-- BEGIN MODAL -->
+          <div class="modal fade none-border" id="event-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title"><strong>Add Event</strong></h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success save-event waves-effect waves-light">Create
+                    event</button>
+                  <button type="button" class="btn btn-danger delete-event waves-effect waves-light"
+                    data-dismiss="modal">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Add Category -->
+          <div class="modal fade none-border" id="add-category">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title"><strong>Add</strong> a category</h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label class="control-label">Category Name</label>
+                        <input class="form-control form-white" placeholder="Enter name" type="text"
+                          name="category-name">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="control-label">Choose Category Color</label>
+                        <select class="form-control form-white" data-placeholder="Choose a color..."
+                          name="category-color">
+                          <option value="success">Success</option>
+                          <option value="danger">Danger</option>
+                          <option value="primary">Primary</option>
+                          <option value="warning">Warning</option>
+                          <option value="inverse">Inverse</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger waves-effect waves-light save-category"
+                    data-dismiss="modal">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MODAL -->
+        </div>
+        <!-- end col-12 -->
+      </div> <!-- end row -->
+    </div>
+    <!-- end container -->
+
+  </div>
+  <!-- end wrapper -->
+
+
+  <!-- Footer -->
+  <footer class="footer text-right">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-6">
+          <ul class="pull-right list-inline m-b-0">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <!-- jQuery  -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/detect.js"></script>
+  <script src="../assets/js/fastclick.js"></script>
+  <script src="../assets/js/jquery.blockUI.js"></script>
+  <script src="../assets/js/waves.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
+  <script src="../assets/js/jquery.nicescroll.js"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+
+  <!-- App js -->
+  <script src="../assets/js/jquery.app.js"></script>
+
+  <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../assets/plugins/select2/dist/js/select2.min.js" type="text/javascript"></script>
+
+  <!-- BEGIN PAGE SCRIPTS -->
+  <script src="../assets/plugins/moment/moment.js"></script>
+  <script src="../assets/plugins/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="../assets/pages/jquery.fullcalendar.js"></script>
+
+</body>
+
+<!-- Mirrored from moltran.coderthemes.com/menu_2/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Mar 2018 17:49:45 GMT -->
+
+</html>
