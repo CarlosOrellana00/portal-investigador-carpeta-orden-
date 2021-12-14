@@ -1,0 +1,68 @@
+/* color de header y footer */
+#topnav .topbar-main {
+  background-color: #12333F !important;
+}
+
+/* Botones Azules Vista Home*/
+.btn-blue{
+  background-color: #4C6FFF;
+  border-radius: 2px;
+}
+/* Botones Transparentes Vista Home*/
+.btn-light{
+  background-color: #E1E8FF;
+  border-radius: 2px;
+}
+/* texto footer */
+
+
+
+/* INICIO Menu de botones de vista multiple */
+/* Origen: components.css */
+.wizards > .actions{
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+/* boton siguiente */
+.wizard > .actions a {
+  background: #4C6FFF;
+  border-radius: 2px;
+  color: #ffffff;
+}
+/* sobre el boton siguiente */
+.wizard > .actions a:hover {
+  background: #6e8cd7;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.wizard > .actions a:active {
+  background: #6e8cd7;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.wizard > .actions .disabled a {
+  background: #e2e2e2;
+  color: #333333;
+}
+.wizard > .actions .disabled a:hover {
+  background: #e2e2e2;
+  color: #333333;
+}
+.wizard > .actions .disabled a:active {
+  background: #e2e2e2;
+  color: #333333;
+}
+/* FIN Menu de botones de vista multiple  */
+/* formulario select */
+select{
+  border-radius: 2px;
+}
+/*campos input*/
+input{
+  border-radius: 2px;
+}
+textarea{
+  border-radius: 2px;
+}
